@@ -11,4 +11,10 @@ def makeMeSomeSoup(url):
 url = "https://pagar22.github.io"
 soup = makeMeSomeSoup(url)
 
-# print(soup.find_all("div"))
+all_links = set()
+anchors = soup.find_all("a")
+
+for anchor in anchors:
+    all_links.add(anchor.get("href"))
+
+print(all_links)
