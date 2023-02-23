@@ -3,7 +3,7 @@ import requests
 url = "https://match.uefa.com/v5/matches"
 
 params = dict(
-    competitionId=0,
+    competitionId=1,
     seasonYear="2021",
     phase="TOURNAMENT",
     order="DESC",
